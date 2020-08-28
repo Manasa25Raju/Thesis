@@ -1,0 +1,62 @@
+.profile{
+  text-align: center;
+  margin-top: 20px;
+  .workouts{
+    margin-left: 300px;
+  }
+.workout1{
+display: flex;
+margin-bottom: 20px;
+}
+.workout2{
+display: flex;
+}
+.exercise{
+  width: 300px;
+  height: 250px;
+   margin-Right: 20px;
+  border-Color: black;
+  display: grid;
+  color: black;
+  // background-color: rgb(145, 168, 59);
+}
+.yoga{
+  width: 300px;
+  height: 250px;
+   margin-Right: 20px;
+  border-Color: black;
+  display: grid;
+  color: black;
+  // background-color: rgb(185, 106, 137);
+
+}
+.walk{
+  width: 300px;
+  height: 250px;
+   margin-Right: 20px;
+  border-Color: black;
+  display: grid;
+  color: black;
+  // background-color: rgb(89, 139, 168);
+
+}
+.water{
+  width: 300px;
+  height: 250px;
+   margin-Right: 20px;
+  border-Color: black;
+  display: grid;
+  color: black;
+  // background-color: rgb(192, 134, 95);
+
+}
+img{
+  width: 150px;
+   height: 150px;
+    margin-Left: 60px;
+     margin-Top: 10px;
+}
+h1{
+  margin-bottom: 20px;
+}
+}

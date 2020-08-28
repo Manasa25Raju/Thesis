@@ -53,13 +53,6 @@ class Login extends Component {
     return (
       <div class="container" >
         <div class="row" >
-        {/* <div id="head1" class="col-6">
-            <p> 
-          <h1>Health Gain</h1> <br></br>
-          </p>
-          <img src={logo} />
-          </div> */}
-
           <div id="head"class="col-6"> <form noValidate onSubmit={this.onSubmit} style={{width: "400px", marginLeft:"0px"}}>
             <h1 className="h3 mb-3 "><b>Sign-in</b></h1>
             <img src={logo} style={{height: "250px", width:"250px"}} />

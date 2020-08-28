@@ -20,7 +20,7 @@ class dashboard extends Component {
   render() {
     return (
       <div class="container" >
-        <h1 className="para"> Dashboard</h1>
+        {/* <h1 className="para"> Dashboard</h1> */}
         <div class="dashboardpage" >
           <div className="batch1">
           <button id="workout" onClick={this.gotoworkout} type="submit" 
