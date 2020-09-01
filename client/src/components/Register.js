@@ -12,6 +12,8 @@ class Register extends Component {
             last_name: '',
             email: '',
             password: '',
+            weight: '',
+            height: ''
         }
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
@@ -28,7 +30,9 @@ class Register extends Component {
             first_name: this.state.first_name,
             last_name: this.state.last_name,
             email: this.state.email,
-            password: this.state.password
+            password: this.state.password,
+            weight: this.state.weight,
+            height: this.state.height
         }
         
         const errors = {}
@@ -43,7 +47,6 @@ class Register extends Component {
             register(user).then(res => {
                 this.props.history.push(`/login`)
                 alert("Successfully Registered")
-                
             })
         }
         else {
@@ -58,20 +61,16 @@ class Register extends Component {
         return (
             <div class="container">
             <div class="row">
-            {/* <div id="head3" style={{ fontSize: "20px" }} class="col-6">
-                <br></br>
-                <br></br>
-                
-            <h1><b>Register</b> </h1>
-            <br></br>
-            
-</div> */}
-                
-                    
             <div class="head2" class="col-6">    <form noValidate onSubmit={this.onSubmit} style={{width: "400px", marginLeft:"0px"}}>
                             <h2 ><b>Register</b></h2>
                             <img src={logo} style={{height: "250px", width:"250px"}} />
+{/* <div>
+<select>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        </select>
 
+    </div> */}
                             <div className="form-group">
                                 <label htmlFor="first_name">First Name</label>
                                 <input type="text"
@@ -90,21 +89,18 @@ class Register extends Component {
                                     name="last_name"
                                     aria-label= "Enter your last name"
                                     style={{width:"200px" }}
-                                    
                                     placeholder="Enter Last Name"
                                     value={this.state.last_name}
                                     onChange={this.onChange} />
                             </div>
                             
                             <div className="form-group">
-                                <label htmlFor="email" style={{marginLeft: "30px"}} >Email Address</label>
+                                <label htmlFor="email" >Email Address</label>
                                 <input type="email"
                                     className="form-control"
                                     name="email"
                                     aria-label= "Enter your Email id"
                                     style={{width:"200px" }}
-                                    
-                                
                                     placeholder="Enter Email"
                                     value={this.state.email}
                                     onChange={this.onChange} />
@@ -121,6 +117,29 @@ class Register extends Component {
                                     value={this.state.password}
                                     onChange={this.onChange} />
                             </div>
+                                <div className="form-group">
+                                <label>Enter your Weight</label>
+                                <input type="weight"
+                                    className="form-control"
+                                    name="weight"
+                                    aria-label= "Enter your Weight"
+                                    style={{width:"200px" }}
+                                    placeholder="Enter Weight"
+                                    value={this.state.weight}
+                                    onChange={this.onChange} />
+                                </div>
+                                <div className="form-group">
+                                <label>Enter your Height</label>
+                                <input type="height"
+                                    className="form-control"
+                                    name="height"
+                                    aria-label= "Enter your Height"
+                                    style={{width:"200px" }}
+                                    placeholder="Enter Height"
+                                    value={this.state.height}
+                                    onChange={this.onChange} />
+                                </div>
+
                             <button id="register"  aria-label= "click on the button  to register"  type="submit" style={{width:"100px", alignItems:"center", color:"black"}} className="btn_register">
                                 Register
                             </button>

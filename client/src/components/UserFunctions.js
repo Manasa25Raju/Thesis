@@ -6,7 +6,9 @@ export const register = newUser => {
       first_name: newUser.first_name,
       last_name: newUser.last_name,
       email: newUser.email,
-      password: newUser.password
+      password: newUser.password,
+      weight: newUser.weight,
+      height: newUser.height
     })
     .then(response => {
       console.log('Registered')
@@ -28,18 +30,3 @@ export const login = user => {
   
     })
 }
-
-// export const getProfile = token => {
-//   return axios
-//     .get('users/profile', {
-//       headers: { Authorization: ` ${token}` }
-//     })
-//     .then(response => {
-//       console.log(response)
-//       return response.data
-//     })
-//     .catch(err => {
-//       console.log(err)
-//      })
-    
-// }
