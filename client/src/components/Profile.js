@@ -2,6 +2,16 @@ import React, { Component } from 'react'
 import './styles/loginstyle.scss'
 import logo from './assests/gif.gif'
 import jwt_decode from 'jwt-decode'
+import Select from 'react-select'
+
+const techCompanies = [
+  { label: "Arthritis", value: 1 },
+  { label: "Diabetes", value: 2 },
+  { label: "Blood Pressure", value: 3 },
+  { label: "Anxiety", value: 4 },
+  { label: "Obesity", value: 5 },
+  { label: "Hypertenstion", value: 6 },
+];
 
 class Profile extends Component {
   constructor() {
@@ -14,7 +24,7 @@ class Profile extends Component {
         errors: {}
     }
   }
-
+  
   componentDidMount(){
     const token = localStorage.usertoken
     const decoded = jwt_decode(token)
@@ -26,7 +36,6 @@ class Profile extends Component {
       height: decoded.height
     })
   }
-
   render() {
     return (
       <div class="container" >
@@ -40,19 +49,15 @@ class Profile extends Component {
               <label style={{paddingLeft: "80px"}} >{this.state.email}</label>
               </div>
               <div class="info1"> 
-                <h4>Information</h4>
+              <h4>Information</h4>
               <label>Weight&nbsp;&nbsp;{this.state.weight}kg</label>
               <label style={{marginLeft:"80px"}}>Height&nbsp;&nbsp;{this.state.height}inch</label>
             </div>
             <div class="info2"> 
                 <h4>Information</h4>
-                <select>
-                <option>Select</option>
-                  <option>Blood pressure</option>
-                  <option>Diebatics</option>
-                  </select>
+                <Select options={ techCompanies } 
+          isMulti />
             </div>
-
           </form>
           </div>
         </div>
