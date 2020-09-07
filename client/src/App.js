@@ -7,6 +7,7 @@ import Register from './components/Register'
 import Landing from './components/Landing'
 import Workout from './components/Workout'
 import Profile from './components/Profile'
+import Video from './components/video'
 
 class App extends Component {
   render() {
@@ -20,6 +21,7 @@ class App extends Component {
             <Route exact path="/login" component={Login} />
             <Route exact path="/workout" component={Workout} />
             <Route exact path="/profile" component={Profile} />
+            <Route exact path="/video" component={Video} />
 
           </div>
       </Router>

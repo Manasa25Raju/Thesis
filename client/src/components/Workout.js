@@ -10,6 +10,14 @@ import cal from './assests/cal.png'
 const currDate = new Date().toLocaleDateString();
 
 class Workout extends Component {
+  constructor(props) {
+    super(props);
+    this.gotovideo = this.gotovideo.bind(this);
+  }
+
+  gotovideo() {
+    this.props.history.push('/video');
+  }
 
   render() {
     return (
@@ -19,7 +27,7 @@ class Workout extends Component {
    <b> <p style={{position: "absolute", left: "975px", top: "70px", fontSize: "20px"}}>{currDate}</p> </b>
           <div class="workouts">
           <div class="workout1">  
-          <button id="exercise"  type="submit" aria-label= "Login to view the dashboard" className="exercise">
+          <button id="exercise"  type="submit" aria-label= "Login to view the dashboard" className="exercise" onClick={this.gotovideo}>
                           <img src={exercise} style={{width:"250px", height: "180px", marginLeft: "10px"}}/>
                           5:00 pm - 6:00 pm <br/> Exercise for the day
               </button>
