@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import logo from './assests/gif.gif'
 import jwt_decode from 'jwt-decode'
 import Select from 'react-select'
 import './styles/profile.scss'

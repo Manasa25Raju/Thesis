@@ -1,35 +1,43 @@
-.row{
+.row {
   padding-top: 50px;
   height: 620px;
-    width: 850px;
-    margin-left: 130px;
-    margin-right: 100px;
-    justify-content: center;
+  width: 850px;
+  margin-left: 130px;
+  margin-right: 100px;
+  justify-content: center;
 }
-.col-6{
+.col-6 {
   font-size: 20px;
   width: 400px;
   text-align: -webkit-center;
-  outline: outset;  
+  outline: outset;
 }
-  h1{
-    text-align: center;
-  }
-  p{
-    height: 50px;
-  }
-.form-control{
-width: 200px;
-// margin-left: 100px;
+h1 {
+  text-align: center;
 }
-.btn_login{
+p {
+  height: 50px;
+}
+.btn_login {
   width: 100px;
   text-align: center;
   color: black;
+background-color: rgb(137, 206, 206);
+outline-style: auto;
 }
 
-img{
+img {
   height: 350px;
   width: 400px;
   border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.sign-in{
+  display: flex;
+  margin-bottom: 20px;
+}
+.form-control{
+  height: 40px;
+  width: 250px;
 }

@@ -57,7 +57,7 @@ class Login extends Component {
             <h1 className="h3 mb-3 "><b>Sign-in</b></h1>
             <img src={logo} style={{height: "250px", width:"250px"}} />
 
-            <div className="form-group"  >
+            <div className="sign-in"  >
               <label htmlFor="email">Email address</label>
               <input type="email" className="form-control"
                 name="email"
@@ -67,7 +67,7 @@ class Login extends Component {
                 onChange={this.onChange}
               />
             </div>
-            <div className="form-group"  >
+            <div className="sign-in"  >
               <label htmlFor="password" >Password</label>
               <input
                 className="form-control"
@@ -76,7 +76,7 @@ class Login extends Component {
                 placeholder=" Password"
                 value={this.state.password}
                 onChange={this.onChange}
-                type="password"
+                type="password" style={{marginLeft: "60px"}}
               />
             </div>
 
@@ -86,7 +86,7 @@ class Login extends Component {
             <br></br>
 
             <a  href="/Register" style={{color: "black"}} onClick={this.handleClick}>  
-            <center> <mark> New User? Register Here </mark>  </center>  </a>
+            <center> New User? Click <u>Here</u> to Register </center>  </a>
        
           </form>
           </div>

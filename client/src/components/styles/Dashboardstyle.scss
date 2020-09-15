@@ -18,6 +18,9 @@
 //   border: none;
 //   outline: none;
 //   }
+
+button:focus {outline:0;}
+
 .batch1{
   height: 150px;
     width: 850px;
@@ -35,8 +38,6 @@
   text-align: center;
   font-weight: bold;
   border: none;
-  outline: none;
-
 }
 .btn_profile{
   width: 120px;
@@ -50,8 +51,6 @@
   text-align: center;
   font-weight: bold;
   border: none;
-  outline: none;
-
 }
 
 .batch2{
@@ -70,8 +69,6 @@
   text-align: center;
   font-weight: bold;
   border: none;
-  outline: none;
-
 }
 .btn_reward{
   width: 115px;
@@ -85,8 +82,6 @@
   text-align: center;
   font-weight: bold;
   border: none;
-  outline: none;
-
 }
 
 .batch3{
@@ -105,8 +100,6 @@
   text-align: center;
   font-weight: bold;
   border: none;
-  outline: none;
-
 }
 .btn_tip{
   width: 100px;
@@ -120,8 +113,6 @@
   text-align: center;
   font-weight: bold;
   border: none;
-  outline: none;
-
 }
 
 
