@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { register } from './UserFunctions'
 import logo from './assests/gif1.gif'
-
-// import { Link, withRouter } from 'react-router-dom'
+import './styles/registerStyle.scss'
 
 class Register extends Component {
     constructor() {
@@ -19,11 +18,11 @@ class Register extends Component {
         this.onSubmit = this.onSubmit.bind(this)
     }
 
-    onChange (e) {
+    onChange(e) {
         this.setState({ [e.target.name]: e.target.value })
     }
 
-    onSubmit (e) {
+    onSubmit(e) {
         e.preventDefault()
 
         const user = {
@@ -34,7 +33,7 @@ class Register extends Component {
             weight: this.state.weight,
             height: this.state.height
         }
-        
+
         const errors = {}
         const emailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
         errors.email = !user.email.match(emailformat) ?
@@ -52,32 +51,22 @@ class Register extends Component {
         else {
             alert("Invaid email Address or Password");
         }
-        
     }
-    
-    
 
-    render () {
+    render() {
         return (
             <div class="container">
-            <div class="row">
-            <div class="head2" class="col-6">    <form noValidate onSubmit={this.onSubmit} style={{width: "400px", marginLeft:"0px"}}>
-                            <h2 ><b>Register</b></h2>
-                            <img src={logo} style={{height: "250px", width:"250px"}} />
-{/* <div>
-<select>
-                        <option value="4">4</option>
-                        <option value="5">5</option>
-                        </select>
-
-    </div> */}
+                <div class="row">
+                    <div class="head2" class="col-6">
+                        <form noValidate onSubmit={this.onSubmit} >
+                            <h3><b>Register</b></h3>
+                            <img src={logo} style={{ height: "250px", width: "250px" }} />
                             <div className="form-group">
                                 <label htmlFor="first_name">First Name</label>
                                 <input type="text"
-                                    className="form-control"
+                                    className="form"
                                     name="first_name"
-                                    aria-label= "Enter your First name"
-                                    style={{width:"200px" }}
+                                    aria-label="Enter your First name"
                                     placeholder="Enter First Name"
                                     value={this.state.first_name}
                                     onChange={this.onChange} />
@@ -85,70 +74,62 @@ class Register extends Component {
                             <div className="form-group">
                                 <label htmlFor="last_name">Last Name</label>
                                 <input type="text"
-                                    className="form-control"
+                                    className="form"
                                     name="last_name"
-                                    aria-label= "Enter your last name"
-                                    style={{width:"200px" }}
+                                    aria-label="Enter your last name"
                                     placeholder="Enter Last Name"
                                     value={this.state.last_name}
                                     onChange={this.onChange} />
                             </div>
-                            
                             <div className="form-group">
                                 <label htmlFor="email" >Email Address</label>
                                 <input type="email"
-                                    className="form-control"
+                                    className="form"
                                     name="email"
-                                    aria-label= "Enter your Email id"
-                                    style={{width:"200px" }}
-                                    placeholder="Enter Email"
+                                    style={{ marginLeft: "20px" }}
+                                    aria-label="Enter your Email id"
+                                    placeholder="Enter Email Address"
                                     value={this.state.email}
                                     onChange={this.onChange} />
                             </div>
                             <div className="form-group">
-                            
                                 <label htmlFor="password">Password</label>
                                 <input type="password"
-                                    className="form-control"
+                                    className="form"
                                     name="password"
-                                    aria-label= "Enter your Password"
-                                    style={{width:"200px" }}
+                                    style={{ marginLeft: "60px" }}
+                                    aria-label="Enter your Password"
                                     placeholder="Enter Password"
                                     value={this.state.password}
                                     onChange={this.onChange} />
                             </div>
+                            <div class="group">
                                 <div className="form-group">
-                                <label>Enter your Weight</label>
-                                <input type="weight"
-                                    className="form-control"
-                                    name="weight"
-                                    aria-label= "Enter your Weight"
-                                    style={{width:"200px" }}
-                                    placeholder="Enter Weight"
-                                    value={this.state.weight}
-                                    onChange={this.onChange} />
+                                    <label>Weight</label>
+                                    <input type="weight"
+                                        className="form-small"
+                                        name="weight"
+                                        aria-label="Enter your Weight"
+                                        value={this.state.weight}
+                                        onChange={this.onChange} /> &nbsp; Kg
                                 </div>
                                 <div className="form-group">
-                                <label>Enter your Height</label>
-                                <input type="height"
-                                    className="form-control"
-                                    name="height"
-                                    aria-label= "Enter your Height"
-                                    style={{width:"200px" }}
-                                    placeholder="Enter Height"
-                                    value={this.state.height}
-                                    onChange={this.onChange} />
+                                    <label style={{ marginLeft: "50px" }}>Height</label>
+                                    <input type="height"
+                                        className="form-small"
+                                        name="height"
+                                        aria-label="Enter your Height"
+                                        value={this.state.height}
+                                        onChange={this.onChange} /> &nbsp; cm
                                 </div>
-
-                            <button id="register"  aria-label= "click on the button  to register"  type="submit" style={{width:"100px", alignItems:"center", color:"black"}} className="btn_register">
+                            </div>
+                            <button id="register" aria-label="click on the button  to register" type="submit" style={{ width: "100px", alignItems: "center", color: "black" }} className="btn_register">
                                 Register
                             </button>
-                            
                         </form>
                     </div>
-                    </div> 
-                    </div> 
-                
+                </div>
+            </div>
         )
     }
 }

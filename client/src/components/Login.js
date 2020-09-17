@@ -11,7 +11,6 @@ class Login extends Component {
     this.state = {
       email: '',
       password: '',
-      // errors: {}
     }
 
     this.onChange = this.onChange.bind(this)
@@ -41,7 +40,7 @@ class Login extends Component {
       login(user).then(res => {
         if (res) {
           this.props.history.push(`/Dashboard`)
-    
+
         }
       })
     else {
@@ -53,15 +52,15 @@ class Login extends Component {
     return (
       <div class="container" >
         <div class="row" >
-          <div id="head"class="col-6"> <form noValidate onSubmit={this.onSubmit} style={{width: "400px", marginLeft:"0px"}}>
+          <div id="head" class="col-6"> <form noValidate onSubmit={this.onSubmit} style={{ width: "400px", marginLeft: "0px" }}>
             <h1 className="h3 mb-3 "><b>Sign-in</b></h1>
-            <img src={logo} style={{height: "250px", width:"250px"}} />
+            <img src={logo} style={{ height: "250px", width: "250px" }} />
 
             <div className="sign-in"  >
               <label htmlFor="email">Email address</label>
               <input type="email" className="form-control"
                 name="email"
-                aria-label= "Enter your Email id"
+                aria-label="Enter your Email id"
                 placeholder="Enter email"
                 value={this.state.email}
                 onChange={this.onChange}
@@ -72,29 +71,23 @@ class Login extends Component {
               <input
                 className="form-control"
                 name="password"
-                aria-label= "Enter your password"
+                aria-label="Enter your password"
                 placeholder=" Password"
                 value={this.state.password}
                 onChange={this.onChange}
-                type="password" style={{marginLeft: "60px"}}
+                type="password" style={{ marginLeft: "60px" }}
               />
             </div>
-
-            <button id="signin"  type="submit" aria-label= "Login to view the dashboard" className="btn_login">
+            <button id="signin" type="submit" aria-label="Login to view the dashboard" className="btn_login">
               Login </button>
             <br></br>
             <br></br>
-
-            <a  href="/Register" style={{color: "black"}} onClick={this.handleClick}>  
-            <center> New User? Click <u>Here</u> to Register </center>  </a>
-       
+            <a href="/Register" style={{ color: "black" }} onClick={this.handleClick}>
+              <center> New User? Click <u>Here</u> to Register </center>  </a>
           </form>
           </div>
         </div>
-
       </div>
-
-
     )
   }
 }

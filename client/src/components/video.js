@@ -6,11 +6,10 @@ class video extends Component {
 
   render() {
     return (
-      <div class= "videoplayer">
-        <ReactPlayer url="https://youtu.be/MtAdXbCujGk" controls={true}/>
-        </div>
+      <div class="videoplayer">
+        <ReactPlayer url="https://youtu.be/MtAdXbCujGk" controls={true} />
+      </div>
     )
   }
-
 }
 export default video

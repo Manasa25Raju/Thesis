@@ -1,81 +1,74 @@
-.profile{
+.profile {
   text-align: center;
   margin-top: 20px;
-  .workouts{
+  .workouts {
     margin-left: 300px;
   }
-.workout1{
-display: flex;
-margin-bottom: 20px;
+  .workout1 {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .workout2 {
+    display: flex;
+  }
+  .exercise {
+    width: 300px;
+    height: 250px;
+    margin-right: 20px;
+    border-color: black;
+    display: grid;
+    color: black;
+  }
+  .yoga {
+    width: 300px;
+    height: 250px;
+    margin-right: 20px;
+    border-color: black;
+    display: grid;
+    color: black;
+  }
+  .walk {
+    width: 300px;
+    height: 250px;
+    margin-right: 20px;
+    border-color: black;
+    display: grid;
+    color: black;
+  }
+  .water {
+    width: 300px;
+    height: 250px;
+    margin-right: 20px;
+    border-color: black;
+    display: grid;
+    color: black;
+  }
+  img {
+    width: 150px;
+    height: 150px;
+    margin-left: 60px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
 }
-.workout2{
-display: flex;
+.form-group {
+  display: flex;
 }
-.exercise{
-  width: 300px;
-  height: 250px;
-   margin-Right: 20px;
-  border-Color: black;
-  display: grid;
-  color: black;
-  // background-color: rgb(145, 168, 59);
-}
-.yoga{
-  width: 300px;
-  height: 250px;
-   margin-Right: 20px;
-  border-Color: black;
-  display: grid;
-  color: black;
-  // background-color: rgb(185, 106, 137);
-
-}
-.walk{
-  width: 300px;
-  height: 250px;
-   margin-Right: 20px;
-  border-Color: black;
-  display: grid;
-  color: black;
-  // background-color: rgb(89, 139, 168);
-
-}
-.water{
-  width: 300px;
-  height: 250px;
-   margin-Right: 20px;
-  border-Color: black;
-  display: grid;
-  color: black;
-  // background-color: rgb(192, 134, 95);
-
-}
-img{
-  width: 150px;
-   height: 150px;
-    margin-Left: 60px;
-     margin-Top: 10px;
-     margin-bottom: 0px;
-}
-h1{
-  margin-bottom: 20px;
-}
-}
-.form-group{
-display: flex;
-}
-.form-control{
+.form-control {
   margin-left: 20px;
 }
-.info1{
+.info1 {
   margin-top: 30px;
   text-align: left;
 }
-.info2{
+.info2 {
   margin-top: 30px;
   text-align: left;
 }
-.videoplayer{
+.videoplayer {
   margin-left: 300px;
   margin-top: 100px;
 }

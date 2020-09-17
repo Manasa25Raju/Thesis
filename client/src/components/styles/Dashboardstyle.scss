@@ -1,4 +1,4 @@
-.dashboardpage{
+.dashboardpage {
   background-image: url(../assests/man.png);
   background-size: cover;
   margin-left: 220px;
@@ -7,112 +7,98 @@
   width: 700px;
   display: block;
 }
-// .para{
-//   text-align: center;
-// }
-// button{
-//   background-color:rgb(69, 141, 137);
-//   font-size: medium;
-//   text-align: center;
-//   font-weight: bold;
-//   border: none;
-//   outline: none;
-//   }
-
-button:focus {outline:0;}
-
-.batch1{
-  height: 150px;
-    width: 850px;
-    display: inline-block;
+button:focus {
+  outline: 0;
 }
-.btn_workout{
+
+.batch1 {
+  height: 150px;
+  width: 850px;
+  display: inline-block;
+}
+.btn_workout {
   width: 115px;
   height: 115px;
-  margin-Left: 65px;
-  // margin-top: 20px;
-  border-Radius:50%;
-  border-Color: black;
-  background-color:rgb(69, 141, 137);
+  margin-left: 65px;
+  border-radius: 50%;
+  border-color: black;
+  background-color: rgb(69, 141, 137);
   font-size: medium;
   text-align: center;
   font-weight: bold;
   border: none;
 }
-.btn_profile{
+.btn_profile {
   width: 120px;
   height: 120px;
-  margin-Left: 308px;
+  margin-left: 308px;
   margin-top: 15px;
-  border-Radius:50%;
-  border-Color: black;
-  background-color:rgb(69, 141, 137);
+  border-radius: 50%;
+  border-color: black;
+  background-color: rgb(69, 141, 137);
   font-size: medium;
   text-align: center;
   font-weight: bold;
   border: none;
 }
 
-.batch2{
+.batch2 {
   height: 150px;
-    width: 850px;
+  width: 850px;
 }
-.btn_review{
+.btn_review {
   width: 100px;
   height: 115px;
-  margin-Left: 15px;
+  margin-left: 15px;
   margin-top: 60px;
-  border-Radius:20%;
-  border-Color: black;
-  background-color:rgb(69, 141, 137);
+  border-radius: 20%;
+  border-color: black;
+  background-color: rgb(69, 141, 137);
   font-size: medium;
   text-align: center;
   font-weight: bold;
   border: none;
 }
-.btn_reward{
+.btn_reward {
   width: 115px;
   height: 115px;
-  margin-Left: 435px;
+  margin-left: 435px;
   margin-top: 30px;
-  border-Radius:50%;
-  border-Color: black;
-  background-color:rgb(69, 141, 137);
+  border-radius: 50%;
+  border-color: black;
+  background-color: rgb(69, 141, 137);
   font-size: medium;
   text-align: center;
   font-weight: bold;
   border: none;
 }
 
-.batch3{
+.batch3 {
   height: 150px;
-    width: 850px;
+  width: 850px;
 }
-.btn_month{
+.btn_month {
   width: 115px;
   height: 115px;
-  margin-Left: 85px;
+  margin-left: 85px;
   margin-top: 60px;
-  border-Radius:50%;
-  border-Color: black;
-  background-color:rgb(69, 141, 137);
+  border-radius: 50%;
+  border-color: black;
+  background-color: rgb(69, 141, 137);
   font-size: medium;
   text-align: center;
   font-weight: bold;
   border: none;
 }
-.btn_tip{
+.btn_tip {
   width: 100px;
   height: 115px;
-  margin-Left: 280px;
-  // margin-top: 45px;
-  border-Radius:20%;
-  border-Color: black;
-  background-color:rgb(69, 141, 137);
+  margin-left: 280px;
+  border-radius: 20%;
+  border-color: black;
+  background-color: rgb(69, 141, 137);
   font-size: medium;
   text-align: center;
   font-weight: bold;
   border: none;
 }
-
-
