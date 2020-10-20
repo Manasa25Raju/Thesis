@@ -1,0 +1,49 @@
+.Review{
+  position: absolute;
+  width: 400px;
+  margin-top: 50px;
+  margin-left: 400px;
+  outline: inset;
+}
+.name{
+  font-size: x-large;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+  }
+  .slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+}
+
+.slides {
+  position: relative;
+}
+
+.slides .slick-prev,
+.slides .slick-next {
+  position: absolute;
+  top: 50%;
+  z-index:1;
+}
+
+.slides .slick-prev {
+  left: 0%;
+}
+
+.slides .slick-next {
+  right: 0%;
+}
+.slick-prev:before {
+  content: '←';
+  color: black;
+}
+.slick-next:before {
+  content: '→';
+  color: black;
+}
+.image{
+  border-radius: 0;
+}

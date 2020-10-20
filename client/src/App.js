@@ -8,6 +8,9 @@ import Landing from './components/Landing'
 import Workout from './components/Workout'
 import Profile from './components/Profile'
 import Video from './components/video'
+import Review from './components/Review'
+import Month from './components/Month'
+
 
 class App extends Component {
   render() {
@@ -21,6 +24,8 @@ class App extends Component {
           <Route exact path="/workout" component={Workout} />
           <Route exact path="/profile" component={Profile} />
           <Route exact path="/video" component={Video} />
+          <Route exact path="/review" component={Review} />
+          <Route exact path="/month" component={Month} />
         </div>
       </Router>
     )
