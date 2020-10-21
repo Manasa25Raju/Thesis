@@ -7,8 +7,9 @@ export const register = newUser => {
       last_name: newUser.last_name,
       email: newUser.email,
       password: newUser.password,
+      age: newUser.age,
       weight: newUser.weight,
-      height: newUser.height
+      height: newUser.height,
     })
     .then(response => {
       console.log('Registered')

@@ -10,6 +10,8 @@ import Profile from './components/Profile'
 import Video from './components/video'
 import Review from './components/Review'
 import Month from './components/Month'
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 
 class App extends Component {
@@ -17,6 +19,8 @@ class App extends Component {
     return (
       <Router>
         <div className="App">
+          <Header />
+          <div className="container" >
           <Route exact path="/" component={Landing} />
           <Route exact path="/register" component={Register} />
           <Route exact path="/dashboard" component={Dashboard} />
@@ -26,6 +30,8 @@ class App extends Component {
           <Route exact path="/video" component={Video} />
           <Route exact path="/review" component={Review} />
           <Route exact path="/month" component={Month} />
+          </div>
+          <Footer />
         </div>
       </Router>
     )

@@ -17,6 +17,10 @@ const UserSchema = new Schema({
     type: String,
     required: true
   },
+  age: {
+    type: String,
+    required: true
+  },
   weight: {
     type: String,
     required: true
@@ -28,7 +32,7 @@ const UserSchema = new Schema({
   date: {
     type: Date,
     default: Date.now
-  }
+  },
 })
 
 module.exports = User = mongoose.model('users', UserSchema)

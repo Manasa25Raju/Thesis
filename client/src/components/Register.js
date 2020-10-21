@@ -3,6 +3,16 @@ import { register } from './UserFunctions'
 import logo from './assests/gif1.gif'
 import './styles/registerStyle.scss'
 
+const techCompanies = [
+    { label: "Arthritis", value: 1 },
+    { label: "Diabetes", value: 2 },
+    { label: "Blood Pressure", value: 3 },
+    { label: "Anxiety", value: 4 },
+    { label: "Obesity", value: 5 },
+    { label: "Hypertenstion", value: 6 },
+  ];
+  
+
 class Register extends Component {
     constructor() {
         super()
@@ -11,8 +21,9 @@ class Register extends Component {
             last_name: '',
             email: '',
             password: '',
+            age: '',
             weight: '',
-            height: ''
+            height: '',
         }
         this.onChange = this.onChange.bind(this)
         this.onSubmit = this.onSubmit.bind(this)
@@ -30,8 +41,9 @@ class Register extends Component {
             last_name: this.state.last_name,
             email: this.state.email,
             password: this.state.password,
+            age: this.state.age,
             weight: this.state.weight,
-            height: this.state.height
+            height: this.state.height,
         }
 
         const errors = {}
@@ -56,11 +68,13 @@ class Register extends Component {
     render() {
         return (
             <div class="container">
-                <div class="row">
-                    <div class="head2" class="col-6">
-                        <form noValidate onSubmit={this.onSubmit} >
-                            <h3><b>Register</b></h3>
+                <div class="row" style={{marginTop: "10px"}}>
+                    <div class="register-col">
+                        <form noValidate onSubmit={this.onSubmit} class="form-register">
+                            <h3 style={{marginBottom: "20px"}}><b>Register</b></h3>
+                            <div class="register-form">
                             <img src={logo} style={{ height: "250px", width: "250px" }} />
+                           <div class="boxes">
                             <div className="form-group">
                                 <label htmlFor="first_name">First Name</label>
                                 <input type="text"
@@ -103,27 +117,44 @@ class Register extends Component {
                                     value={this.state.password}
                                     onChange={this.onChange} />
                             </div>
-                            <div class="group">
-                                <div className="form-group">
-                                    <label>Weight</label>
-                                    <input type="weight"
-                                        className="form-small"
-                                        name="weight"
-                                        aria-label="Enter your Weight"
-                                        value={this.state.weight}
-                                        onChange={this.onChange} /> &nbsp; Kg
-                                </div>
-                                <div className="form-group">
-                                    <label style={{ marginLeft: "50px" }}>Height</label>
-                                    <input type="height"
-                                        className="form-small"
-                                        name="height"
-                                        aria-label="Enter your Height"
-                                        value={this.state.height}
-                                        onChange={this.onChange} /> &nbsp; cm
-                                </div>
                             </div>
-                            <button id="register" aria-label="click on the button  to register" type="submit" style={{ width: "100px", alignItems: "center", color: "black" }} className="btn_register">
+                            </div>
+                            <h4 style={{textAlign: "center", marginLeft:"120px"}}>Physical Information</h4>
+
+                            <div class="infoboxes">
+                                <div className="form-group">
+                                <label htmlFor="age">Age</label>
+                                <input type="age"
+                                    className="form"
+                                    name="age"
+                                    style={{ marginLeft: "5px", width:"70px",marginRight: "10px" }}
+                                    aria-label="Enter your age"
+                                    value={this.state.age}
+                                    onChange={this.onChange} />
+                            </div> &nbsp;&nbsp;
+                            <div className="form-group">
+                                <label htmlFor="weight">Weight</label>
+                                <input type="weight"
+                                    className="form"
+                                    name="weight"
+                                    style={{ marginLeft: "5px" , width:"70px" }}
+                                    aria-label="Enter your weight"
+                                    value={this.state.weight}
+                                    onChange={this.onChange} />&nbsp;kg &nbsp;&nbsp;&nbsp;&nbsp;
+                            </div>
+                            <div className="form-group" >
+                                <label htmlFor="height">height</label>
+                                <input type="height"
+                                    className="form"
+                                    name="height"
+                                    style={{ marginLeft: "5px" , width:"70px" }}
+                                    aria-label="Enter your height"
+                                    value={this.state.height}
+                                    onChange={this.onChange} /> &nbsp;cm
+                            </div>
+                            </div> <br></br>
+
+                            <button id="register" aria-label="click on the button  to register" type="submit" style={{ width: "100px", alignItems: "center", outline: "none"  , color: "black", marginTop:"50px", marginLeft:"20px" }} className="btn_register">
                                 Register
                             </button>
                         </form>

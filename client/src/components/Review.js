@@ -44,25 +44,27 @@ class Review extends Component {
       className: "slides"
     }
       return(
-        <div class="name">Today's Review
+        <div class="name">
+          <div class="name1">Today's Review</div>
         {data.map((el)=> {
           return (
 <Slider {...setings}>
-      <div>
+      <div class="info">
         <h3 >
-        <img src = "https://previews.123rf.com/images/ramcreative/ramcreative1707/ramcreative170700022/81692157-man-jogging-in-park-amid-a-big-city-cartoon-illustration-of-a-runner.jpg"/>
-steps<input value={el.total} /><br></br><br></br>
+        <img class="image" src = "https://previews.123rf.com/images/ramcreative/ramcreative1707/ramcreative170700022/81692157-man-jogging-in-park-amid-a-big-city-cartoon-illustration-of-a-runner.jpg"/>
+Number of steps covered
+<input class="inputbox" value={el.total} /><br></br><br></br>
         </h3>
       </div>
-      <div>
+      <div class="info">
         <h3> 
-        <img src = "https://previews.123rf.com/images/chudtsankov/chudtsankov1606/chudtsankov160600194/58231600-cartoon-illustation-of-a-water-plastic-bottle-mascot-character-holding-up-a-blank-sign.jpg"/>
-          distance<input value={el.distance} /><br></br><br></br></h3>
+        <img class="image" src = "https://previews.123rf.com/images/chudtsankov/chudtsankov1606/chudtsankov160600194/58231600-cartoon-illustation-of-a-water-plastic-bottle-mascot-character-holding-up-a-blank-sign.jpg"/>
+          distance covered<input class="inputbox" value={el.distance} /><br></br><br></br></h3>
       </div>
-      <div>
+      <div class="info">
         <h3>
-          <img src="https://www.netclipart.com/pp/m/89-893096_heartbeat-png-red-heart-rate-monitor-logo.png"/>
-          Calories<input value={el.caloriesOut} /><br></br></h3>
+          <img class="image" src="https://www.netclipart.com/pp/m/89-893096_heartbeat-png-red-heart-rate-monitor-logo.png"/>
+          Calories burnt<input class="inputbox" value={el.caloriesOut} /><br></br></h3>
       </div>
     </Slider>
           )

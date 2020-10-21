@@ -52,12 +52,15 @@ class Login extends Component {
     return (
       <div class="container" >
         <div class="row" >
-          <div id="head" class="col-6"> <form noValidate onSubmit={this.onSubmit} style={{ width: "400px", marginLeft: "0px" }}>
+          <div id="head" class="col-6"> 
+          <form noValidate onSubmit={this.onSubmit} class="login-form">
             <h1 className="h3 mb-3 "><b>Sign-in</b></h1>
-            <img src={logo} style={{ height: "250px", width: "250px" }} />
+            <div class="login-form1">
+            <img src={logo} class="sign-image" />
 
+            <div class="login-form2">
             <div className="sign-in"  >
-              <label htmlFor="email">Email address</label>
+              <label htmlFor="email" style={{float: "left", marginLeft:"40px"}}>Email address</label>
               <input type="email" className="form-control"
                 name="email"
                 aria-label="Enter your Email id"
@@ -67,7 +70,7 @@ class Login extends Component {
               />
             </div>
             <div className="sign-in"  >
-              <label htmlFor="password" >Password</label>
+              <label htmlFor="password" style={{float: "left", marginLeft:"40px"}}>Password</label>
               <input
                 className="form-control"
                 name="password"
@@ -75,10 +78,12 @@ class Login extends Component {
                 placeholder=" Password"
                 value={this.state.password}
                 onChange={this.onChange}
-                type="password" style={{ marginLeft: "60px" }}
+                type="password" style={{ marginLeft: "30px" }}
               />
             </div>
-            <button id="signin" type="submit" aria-label="Login to view the dashboard" className="btn_login">
+            </div>
+            </div>
+            <button id="signin" type="submit" aria-label="Login to view the dashboard" className="btn_register" style={{outline: "none"  , color: "black"}}>
               Login </button>
             <br></br>
             <br></br>

@@ -5,12 +5,30 @@
   margin-left: 400px;
   outline: inset;
 }
-.name{
+.name1{
   font-size: x-large;
   text-align: center;
   font-weight: bold;
-  margin-top: 50px;
+  margin-top: 20px;
+  width: 450px;
+  margin-bottom: 20px;
   }
+  .image{
+    height: 350px;
+    width: 400px;
+    border-radius: 0%;
+    margin-bottom: 50px;
+    
+  }
+  .name{
+    // padding-top: 50px;
+    height: 520px;
+    width: 550px;
+    margin-left: 40px;
+    margin-right: 100px;
+    justify-content: center;
+  }
+  
   .slides .slick-prev,
 .slides .slick-next {
   position: absolute;
@@ -31,19 +49,24 @@
 
 .slides .slick-prev {
   left: 0%;
+  background-color: black;
 }
 
 .slides .slick-next {
   right: 0%;
+  background-color: black;
 }
-.slick-prev:before {
-  content: '←';
+.slick-slider{
+  height: 350px;
+  width: 400px;
+  border-radius: 0%;
+  margin-bottom: 20px;
+}
+.slick-arrow .slick-prev{
   color: black;
 }
-.slick-next:before {
-  content: '→';
-  color: black;
+.inputbox{
+  width: 50px;
 }
-.image{
-  border-radius: 0;
+.info{
 }

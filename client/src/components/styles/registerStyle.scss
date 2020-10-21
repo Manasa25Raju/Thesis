@@ -1,8 +1,3 @@
-form {
-  width: 400px;
-  margin-left: 0px;
-  margin-bottom: 20px;
-}
 .form {
   margin-left: 50px;
   width: 200px;
@@ -43,4 +38,44 @@ form {
   color: black;
   background-color: #89cece;
   outline-style: auto;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #495057;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.infoboxes{
+  display: flex;
+  height: 30px;
+  float: right;
+  padding-right: 80px;
+  padding-top: 20px;
+
+}
+.register-col {
+  font-size: 20px;
+  width: 700px;
+  text-align: -webkit-center;
+  outline: solid;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  outline-color: rgb(230, 223, 223);
+}
+.register-form{
+  display: flex;
+  height: 250px;
+
+}
+.form-register{
+  width: 700px;
+
+}
+.boxes{
+  margin-left: 60px;
+  margin-top: 20px;
 }

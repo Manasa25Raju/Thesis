@@ -17,6 +17,7 @@ users.post('/register', (req, res) => {
       last_name: req.body.last_name,
       email: req.body.email,
       password: req.body.password,
+      age: req.body.age,
       weight: req.body.weight,
       height: req.body.height,
       created: today
@@ -62,8 +63,9 @@ users.post('/register', (req, res) => {
               first_name: user.first_name,
               last_name: user.last_name,
               email: user.email,
+              age: user.age,
               weight: user.weight,
-              height: user.height
+              height:user.height
             }
             let token = jwt.sign(payload, process.env.SECRET_KEY, {
               expiresIn: 1440

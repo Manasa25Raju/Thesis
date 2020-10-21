@@ -11,6 +11,7 @@
     "bootstrap": "^4.5.3",
     "canvasjs": "^1.8.3",
     "carousel": "0.0.3",
+    "input": "^1.0.1",
     "jwt-decode": "^2.2.0",
     "match-sorter": "^4.2.0",
     "react": "^16.13.1",
