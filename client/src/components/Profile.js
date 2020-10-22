@@ -78,7 +78,7 @@ class Profile extends Component {
     const { profileImg } = this.state
     return (
       <div class="container" >
-        <div class="row" style={{marginTop: "10px"}}>
+        <div class="row" style={{marginTop: "20px"}}>
           <div id="head" class="col-6"> <form noValidate onSubmit={this.onSubmit}>
             <h1 className="h3 mb-3 "><b>Your Profile</b></h1>
             <div class="imagepage">

@@ -71,9 +71,12 @@ class dashboard extends Component {
 
               <Modal show={this.state.show} >
                 <Modal.Header>
-                  <Modal.Title>You have a reward 🎁</Modal.Title>
+                  <Modal.Title><p style={{color: "blue"}}>Congratulations won a reward 🏆</p></Modal.Title>
                 </Modal.Header>
-                <Modal.Body> <td onClick={() => window.open("https://www.amazon.de/", "_blank")}>Click <u>here</u> to collect your coupons</td> </Modal.Body>
+                <Modal.Body> 
+                <img src="https://acegif.com/wp-content/uploads/gift-5-gap.jpg" style={{width: "350px", height:"350px", marginLeft:"50px"}}/>
+                <td onClick={() => window.open("https://www.amazon.de/", "_blank")}>Click <u>here</u> to collect your coupons</td> 
+                </Modal.Body>
                 <Modal.Footer>
                   <Button onClick={() => { this.handelModal() }}>
                     OK

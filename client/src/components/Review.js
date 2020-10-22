@@ -5,6 +5,7 @@ import Carousel from 'carousel'
 import Slider from 'react-slick'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import pic from '../components/assests/walking1.jpg'
 
 
 class Review extends Component {
@@ -51,20 +52,20 @@ class Review extends Component {
 <Slider {...setings}>
       <div class="info">
         <h3 >
-        <img class="image" src = "https://previews.123rf.com/images/ramcreative/ramcreative1707/ramcreative170700022/81692157-man-jogging-in-park-amid-a-big-city-cartoon-illustration-of-a-runner.jpg"/>
-Number of steps covered
+        <img class="image" src = "https://www.henryford.com/-/media/henry-ford-blog/images/mobile-interior-banner-images/2019/03/person-walking-on-path.jpg"/>
+Number of steps covered &nbsp;
 <input class="inputbox" value={el.total} /><br></br><br></br>
         </h3>
       </div>
       <div class="info">
         <h3> 
-        <img class="image" src = "https://previews.123rf.com/images/chudtsankov/chudtsankov1606/chudtsankov160600194/58231600-cartoon-illustation-of-a-water-plastic-bottle-mascot-character-holding-up-a-blank-sign.jpg"/>
-          distance covered<input class="inputbox" value={el.distance} /><br></br><br></br></h3>
+        <img class="image" src = "https://www.graphicsfactory.com/clip-art/image_files/image/3/1513043-of-a-water-plastic-bottle-mascot-character-holding-up-a-sign-with-text-drink-more-water-vector-illustration-isolated-on-white-background.jpg"/>
+          Distance Covered &nbsp; <input class="inputbox" value={el.distance} /><br></br><br></br></h3>
       </div>
       <div class="info">
         <h3>
-          <img class="image" src="https://www.netclipart.com/pp/m/89-893096_heartbeat-png-red-heart-rate-monitor-logo.png"/>
-          Calories burnt<input class="inputbox" value={el.caloriesOut} /><br></br></h3>
+          <img class="image" src="https://health.clevelandclinic.org/wp-content/uploads/sites/3/2019/02/16ExLoseWeight-1046028108-770x553-1.jpg"/>
+          Calories Burnt &nbsp; <input class="inputbox" value={el.caloriesOut} /><br></br></h3>
       </div>
     </Slider>
           )

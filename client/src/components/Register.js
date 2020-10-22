@@ -61,7 +61,7 @@ class Register extends Component {
             })
         }
         else {
-            alert("Invaid email Address or Password");
+            alert("Please input all the fields with valid information");
         }
     }
 
@@ -71,7 +71,7 @@ class Register extends Component {
                 <div class="row" style={{marginTop: "10px"}}>
                     <div class="register-col">
                         <form noValidate onSubmit={this.onSubmit} class="form-register">
-                            <h3 style={{marginBottom: "20px"}}><b>Register</b></h3>
+                            <h3 style={{marginBottom: "5px"}}><b>Register</b></h3>
                             <div class="register-form">
                             <img src={logo} style={{ height: "250px", width: "250px" }} />
                            <div class="boxes">
@@ -119,30 +119,32 @@ class Register extends Component {
                             </div>
                             </div>
                             </div>
-                            <h4 style={{textAlign: "center", marginLeft:"120px"}}>Physical Information</h4>
+                            <h4 style={{textAlign: "center", marginLeft:"120px", marginBottom: "10px"}}>Physical Information</h4>
 
-                            <div class="infoboxes">
-                                <div className="form-group">
+                            {/* <div class="infoboxes"> */}
+                            {/* <div class="infoboxes1"> */}
+                                <div className="form-group" style={{float: "left", marginLeft: "300px"}}>
                                 <label htmlFor="age">Age</label>
                                 <input type="age"
                                     className="form"
                                     name="age"
-                                    style={{ marginLeft: "5px", width:"70px",marginRight: "10px" }}
+                                    style={{ marginLeft: "25px", width:"70px",marginRight: "10px" }}
                                     aria-label="Enter your age"
                                     value={this.state.age}
                                     onChange={this.onChange} />
-                            </div> &nbsp;&nbsp;
+                            </div> 
                             <div className="form-group">
-                                <label htmlFor="weight">Weight</label>
+                                <label htmlFor="weight" style={{marginLeft: "30px"}}>Weight</label>
                                 <input type="weight"
                                     className="form"
                                     name="weight"
-                                    style={{ marginLeft: "5px" , width:"70px" }}
+                                    style={{ marginLeft: "5px" , width:"70px"}}
                                     aria-label="Enter your weight"
                                     value={this.state.weight}
                                     onChange={this.onChange} />&nbsp;kg &nbsp;&nbsp;&nbsp;&nbsp;
                             </div>
-                            <div className="form-group" >
+                            {/* </div> */}
+                            <div className="form-group" style={{marginLeft: "300px"}}>
                                 <label htmlFor="height">height</label>
                                 <input type="height"
                                     className="form"
@@ -152,9 +154,9 @@ class Register extends Component {
                                     value={this.state.height}
                                     onChange={this.onChange} /> &nbsp;cm
                             </div>
-                            </div> <br></br>
+                            {/* </div> <br></br> */}
 
-                            <button id="register" aria-label="click on the button  to register" type="submit" style={{ width: "100px", alignItems: "center", outline: "none"  , color: "black", marginTop:"50px", marginLeft:"20px" }} className="btn_register">
+                            <button id="register" aria-label="click on the button  to register" type="submit" style={{ width: "100px", alignItems: "center", outline: "none"  , color: "black", marginTop:"10px", marginLeft:"20px" }} className="btn_register">
                                 Register
                             </button>
                         </form>
