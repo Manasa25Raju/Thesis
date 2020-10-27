@@ -42,7 +42,7 @@ class dashboard extends Component {
   handelModal() {
     this.setState({ show: !this.state.show })
   }
-    Msg() {
+  Msg() {
     this.setState({ msg: !this.state.msg })
     console.log("hellooo")
   }
@@ -71,11 +71,11 @@ class dashboard extends Component {
 
               <Modal show={this.state.show} >
                 <Modal.Header>
-                  <Modal.Title><p style={{color: "blue"}}>Congratulations won a reward 🏆</p></Modal.Title>
+                  <Modal.Title><p style={{ color: "blue" }}>Congratulations won a reward 🏆</p></Modal.Title>
                 </Modal.Header>
-                <Modal.Body> 
-                <img src="https://acegif.com/wp-content/uploads/gift-5-gap.jpg" style={{width: "350px", height:"350px", marginLeft:"50px"}}/>
-                <td onClick={() => window.open("https://www.amazon.de/", "_blank")}>Click <u>here</u> to collect your coupons</td> 
+                <Modal.Body>
+                  <img src="https://acegif.com/wp-content/uploads/gift-5-gap.jpg" style={{ width: "350px", height: "350px", marginLeft: "50px" }} />
+                  <td onClick={() => window.open("https://www.amazon.de/", "_blank")}>Click <u>here</u> to collect your coupons</td>
                 </Modal.Body>
                 <Modal.Footer>
                   <Button onClick={() => { this.handelModal() }}>
@@ -89,17 +89,29 @@ class dashboard extends Component {
             <button id="month" type="submit" onClick={this.gotomonth}
               aria-label="Login to view the dashboard" className="btn_month">
               Monthly Review </button>
-              
-              <>
+
+            <>
               <Button variant="primary" onClick={() => { this.Msg() }} style={{ width: "115px", height: "115px", marginLeft: "70px", borderRadius: "50%", borderColor: "black", backgroundColor: "#458d89", fontSize: "mediun", textAlign: "center", fontWeight: "bold", border: "none", color: "black" }}>
                 Tips
         </Button>
 
               <Modal show={this.state.msg} >
                 <Modal.Header>
-                  <Modal.Title>Tips for the day</Modal.Title>
+                  <Modal.Title>Health Tips for the day</Modal.Title>
                 </Modal.Header>
-                <Modal.Body> tip 1  </Modal.Body>
+                
+                <Modal.Body> <u><b>Tip 1: </b></u> <p>Select high-fiber foods like whole-grain breads and cereals,
+                  beans, unsalted nuts and seeds, deeply colored vegetables (like green beans),
+                  and fruits.  </p>
+                </Modal.Body>
+
+                <Modal.Body> <u><b>Tip 2: </b></u> <p>Avoid fried foods. Choose broiled, grilled, or boiled options instead.</p>
+                </Modal.Body>
+
+                <Modal.Body> <u><b>Tip 3: </b></u><p>Drink vitamin D-fortified low-fat or fat-free milk; milk products; or nondairy soy,
+                  almond, rice, or other drinks with added vitamin D and calcium to help keep your bones strong as you age.</p>
+                </Modal.Body>
+
                 <Modal.Footer>
                   <Button onClick={() => { this.Msg() }}>
                     OK
@@ -107,7 +119,7 @@ class dashboard extends Component {
                 </Modal.Footer>
               </Modal>
             </>
-            
+
           </div>
         </div>
       </div>

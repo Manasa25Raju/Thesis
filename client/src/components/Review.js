@@ -60,7 +60,7 @@ Number of steps covered &nbsp;
       <div class="info">
         <h3> 
         <img class="image" src = "https://www.graphicsfactory.com/clip-art/image_files/image/3/1513043-of-a-water-plastic-bottle-mascot-character-holding-up-a-sign-with-text-drink-more-water-vector-illustration-isolated-on-white-background.jpg"/>
-          Distance Covered &nbsp; <input class="inputbox" value={el.distance} /><br></br><br></br></h3>
+          Water Intake &nbsp; <input class="inputbox" value={el.distance} /><br></br><br></br></h3>
       </div>
       <div class="info">
         <h3>
