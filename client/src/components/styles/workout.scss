@@ -147,3 +147,37 @@ transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
   float: left;
   display: none;
 }
+
+.video-react-big-play-button.video-react-big-play-button-left{
+  width: 100px;
+  height: 40px;
+  text-align: center;
+  color: black;
+  background-color: #89cece;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #495057;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  display: none;
+}
+
+.video-react-play-control.video-react-control.video-react-button.video-react-playing{
+    width: 100px;
+  height: 40px;
+  text-align: center;
+  color: black;
+  background-color: #89cece;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #495057;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+
+}

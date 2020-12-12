@@ -30,7 +30,7 @@ class Workout extends Component {
               <img src={exercise} style={{ width: "230px", height: "160px", marginLeft: "10px", marginTop: "-20px"}} />
               5:00 pm - 6:00 pm <br /> Exercise for the day
               </button>
-            <button id="yoga" type="submit" aria-label="Login to view the dashboard" className="yoga">
+            <button id="yoga" type="submit" aria-label="Login to view the dashboard" className="yoga" onClick={this.gotovideo}>
               <img src={yoga} style={{ width: "180px", height: "140px", marginLeft: "30px", marginTop: "0px"}}/>
               7:00 am - 8:00 am  <br /> Yoga for today
               </button>

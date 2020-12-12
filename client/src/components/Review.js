@@ -15,7 +15,7 @@ class Review extends Component {
     // get the url 
     var url = window.location.href;
     //getting the access token from url 
-    var access_token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJaWE0iLCJzdWIiOiI4TEhRUkciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJudXQgcnBybyByc2xlIiwiZXhwIjoxNjAzMjEzMzI3LCJpYXQiOjE2MDMxODQ1Mjd9.Dbi-d3GrX_oFJ3vkYL-J7Jtk99yZuBqYtDcZOReaC9w";
+    var access_token = "eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkJaWE0iLCJzdWIiOiI4TEhRUkciLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyc29jIHJhY3QgcnNldCBybG9jIHJ3ZWkgcmhyIHJudXQgcnBybyByc2xlIiwiZXhwIjoxNjA2NzQ5Nzg2LCJpYXQiOjE2MDY3MjA5ODZ9.PHdJVoT6qhQ_vTxMtvsPcHgHxgcxBuB2MjyzevdTNOE";
     // get the userid 
     var userId = "8LHQRG";
     console.log(access_token);

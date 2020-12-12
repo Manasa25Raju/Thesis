@@ -107,7 +107,7 @@ class Profile extends Component {
               <Select options={techCompanies} isMulti />
             </div>
             
-            <button id="register" aria-label="click on the button  to register" type="submit" style={{ width: "100px", alignItems: "center", outline: "none"  , color: "black", marginTop: "10px"}} className="btn_register">
+            <button id="register"  style={{ width: "100px", alignItems: "center", outline: "none"  , color: "black", marginTop: "10px"}} className="btn_register">
               Done
             </button>
 

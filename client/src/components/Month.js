@@ -9,7 +9,7 @@ import Collapsible from 'react-collapsible'
 const Chart = (props) => {
 
     const nextTasks = ['Number of steps', 'calories', 'water intake']
-    const nextTaskNumbered = [80, 40, 60, 100, 0]
+    const nextTaskNumbered = [1, 0, 0, 10, 0]
     const data = {
         labels: nextTasks,
         datasets: [
